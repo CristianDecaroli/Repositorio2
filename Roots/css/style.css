@@ -54,6 +54,37 @@ h1 {
     height: 5vh;
 }
 
+/* ANIMACIONES Y TRANSFORMACIONES */ 
+
+footer {
+    background: linear-gradient(90deg, rgba(250,228,230,1) 0%, rgba(184,245,246,1) 100%);
+}
+
+.rotate:hover {
+    transform: rotateZ(-360deg);
+    transition: 2s;
+}
+
+@keyframes opacity {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+html {
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+
+header {
+    animation-name: headerAnimation;
+    animation-duration: 2s;
+    background-size: cover;
+}
+
+@keyframes headerAnimation {
+    0%{background-image: url(../images/Portada2.jpg);}
+    80%{background-image: url(../images/Portada3.jpg);}
+}
 
 /* ========================== INDEX =============================*/
 
